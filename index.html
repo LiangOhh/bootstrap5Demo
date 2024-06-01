@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航响应式</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top ">
+            <div class="container">
+                <a href="#" class="navbar-brand">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNav" class="collapse navbar-collapse justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-nav">
+                        <form action="" class="navbar-form">
+                            <div class="row position-relative">
+                                <div class="col-md-8 col-xs-8">
+                                    <input type="text" class="form-control rounded-pill px-5" placeholder="搜索关键词">
+                                    <i
+                                        class="bi bi-binoculars fs-4 d-flex align-items-center search position-absolute"></i>
+                                </div>
+                                <div class="col-md-4  d-none d-md-block">
+                                    <button type="button" class="btn btn-success">
+                                        <i class="bi bi-binoculars-fill text-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container mt-2 text-center">
+            <div class="card">
+                <div class="card-header">
+                    Welcome
+                </div>
+                <div class="row card-body">
+                    <div class="col-md-6 bor align-content-center">
+                        <h1 class="card-title">Hello Wrold</h1>
+                        <h6 class="card-subtitle my-2 text-muted">We can create the world</h6>
+                        <div class="">
+                            <a href="#" class="btn btn-primary ">Ok</a>
+                            <a href="#" class="btn btn-success">Well</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block ">
+                        <img src="./assets/img/1.jpg" alt="" class="myImg rounded-4 ">
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <i class=" bi bi-suit-club fs-1"></i>
+                            <h3>浪漫主义的病态</h3>
+                            <p class="text-break">
+                                时下，我们的灵魂萎缩成一种被称作浪漫主义的病态，<br>
+                                它是剥离幻想和神话的基督教精神，<br>
+                                只剩下业已枯萎和病态的本质部分。<br>
+                                浪漫主义最根本的错误就在于<br>
+                                混淆了我们的需要和欲求。<br>
+                                <!-- 对完美生活、极度快乐和梦想的实现等等都有一种欲求。<br> -->
+                                人类就是这样
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <i class="bi bi-suit-heart fs-1"></i>
+                            <h3>不安之书</h3>
+                            <p class="text-break">
+                                我们腐朽的生活所吹出的磷火至少是黑暗中的一点光明。<br>
+                                我平躺着生活。<br>
+                                连在梦中都不知该如何起身。<br>
+                                我的灵魂如此赤裸，对努力一无所知。<br>
+                                我不是悲观主义者,<br>
+                                我只是悲伤
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <i class="bi bi-suit-spade fs-1"></i>
+                            <h3>未完成之梦</h3>
+                            <p class="text-break">
+                                最快乐的时候,<br>
+                                是既不思考也不向往的时候。<br>
+                                甚至是没有梦的时候
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light pt-4 text-center footer">
+        <div class="container ">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <h5>常见框架</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Vue</a></li>
+                        <li />
+                        <li><a href="">React</a></li>
+                        <li />
+                        <li><a href="">Uniapp</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h5>打包</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Webpack</a></li>
+                        </li>
+                        <li><a href="">Vite</a></li>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5>联系我们 </h5>
+                    <ul class="list-unstyled d-flex justify-content-around">
+                        <li><a href=""><i class="bi bi-twitter fs-1"></i></a></li>
+                        </li>
+                        <li><a href=""><i class="bi bi-telegram fs-1"></i></a></li>
+                        </li>
+                        <li><a href=""><i class="bi bi-wechat fs-1"></i></a></li>
+                        </;>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

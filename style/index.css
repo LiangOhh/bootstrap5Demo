@@ -1,0 +1,27 @@
+/* 子绝父相 */
+body{
+    padding-top: 3.5rem;
+}
+footer{
+    margin-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: #575a5d;
+    padding-top: 10px !important;
+    font-size:20px;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    text-decoration: none;
+}
+.search{
+    left: 35px;
+    top: 7px;
+    color: red;
+}
+.myImg{
+    width: 100% !important;
+}
