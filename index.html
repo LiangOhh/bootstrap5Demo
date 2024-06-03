@@ -65,8 +65,29 @@
                         <h1 class="card-title">Hello Wrold</h1>
                         <h6 class="card-subtitle my-2 text-muted">We can create the world</h6>
                         <div class="">
-                            <a href="#" class="btn btn-primary ">Ok</a>
-                            <a href="#" class="btn btn-success">Well</a>
+                            <!-- <a href="#" class="btn btn-primary ">Ok</a>
+                            <a href="#" class="btn btn-success">Well</a> -->
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#OkbtnMessage" role="button"
+                                    aria-expanded="false" aria-controls="OkbtnMessage">
+                                    Ok
+                                </a>
+                                <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#WellbtnMessage" aria-expanded="false"
+                                    aria-controls="WellbtnMessage">
+                                    Well
+                                </button>
+                            </p>
+                            <div class="collapse" id="OkbtnMessage">
+                                <div class="card card-body">
+                                    其实这个Ok链接假按钮什么都没有
+                                </div>
+                            </div>
+                            <div class="collapse" id="WellbtnMessage">
+                                <div class="card card-body">
+                                    其实这个Well假按钮什么都没有
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 d-none d-md-block ">
