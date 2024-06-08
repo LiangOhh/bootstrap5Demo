@@ -1,44 +1,88 @@
 /* 子绝父相 */
-body{
+body {
     padding-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-section {
-    flex: 1 0 auto;
 }
 
-footer{
+footer {
     margin-top: 10px;
-    flex-shrink: 0;
 }
-footer a{
-    text-decoration: none;
-    color: #575a5d;
-    padding-top: 10px !important;
-    font-size:20px;
-}
-a:hover {
-    color: blue;
-}
-a:visited {
-    text-decoration: none;
-}
-.search{
+
+.search {
     left: 35px;
     top: 7px;
     color: red;
 }
-.myImg{
+
+.myImg {
     width: 100% !important;
 }
-.carousel-item img {
-    max-width: 100%;
-    /* width: 100%;  控制宽度为容器的100% */
-    max-height: 100%; /* 高度自动，保持图片的原始纵横比 */ /* 图片始终填满容器，可能会被裁剪 */
+.total{
+    position: relative;
+    background-color: #ccc;
+    width: 100%;
+    height: 200px;
+    margin-top: 140px;
 }
 
-.picBanner{
-   height: 50%vh !important;
+.bear {
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 100px;
+    bottom: 20px;
+    background: url(../assets/img/bear.png) no-repeat;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: Bear_run 0.5s steps(8) infinite, Bear_place 2s forwards
+}
+
+.hill-white {
+    width: 100%;
+    height: 336px;
+    background: url(../assets/img/bg1.png) repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    animation: hillrun1 20s linear infinite;
+}
+
+.hill-black {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation-delay: 1s;
+    z-index: -1;
+    background: url(../assets/img/bg2.png) repeat-x;
+   
+}
+
+@keyframes Bear_run {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes Bear_place {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 50%;
+        /* margin-left: -100px; */
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes hillrun1 {
+    0% {
+        background-position: 0, 0;
+    }
+
+    100% {
+        background-position: -3840px 0;
+    }
 }
